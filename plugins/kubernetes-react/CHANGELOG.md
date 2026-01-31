@@ -1,5 +1,13 @@
 # @backstage/plugin-kubernetes-react
 
+## 0.5.16-next.1
+
+### Patch Changes
+
+- ce3639c: Add PersistentVolume and PersistentVolumeClaims Rendering
+- Updated dependencies
+  - @backstage/plugin-kubernetes-common@0.9.10-next.1
+
 ## 0.5.16-next.0
 
 ### Patch Changes

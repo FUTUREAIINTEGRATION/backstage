@@ -1,5 +1,22 @@
 # example-app-next
 
+## 0.0.32-next.1
+
+### Patch Changes
+
+- Updated dependencies
+  - @backstage/frontend-defaults@0.4.0-next.1
+  - @backstage/frontend-app-api@0.15.0-next.1
+  - @backstage/plugin-catalog@1.32.3-next.1
+  - @backstage/ui@0.12.0-next.1
+  - @backstage/plugin-search@1.6.0-next.1
+  - @backstage/plugin-app@0.4.0-next.0
+  - @backstage/plugin-app-visualizer@0.1.28-next.0
+  - @backstage/plugin-auth@0.1.5-next.0
+  - @backstage/core-compat-api@0.5.8-next.0
+  - @backstage/frontend-plugin-api@0.14.0-next.0
+  - @backstage/plugin-search-react@1.10.3-next.0
+
 ## 0.0.32-next.0
 
 ### Patch Changes

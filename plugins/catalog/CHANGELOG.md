@@ -1,5 +1,15 @@
 # @backstage/plugin-catalog
 
+## 1.32.3-next.1
+
+### Patch Changes
+
+- 8d4c48b: Fixed vertical spacing between tags in the catalog table.
+- Updated dependencies
+  - @backstage/core-compat-api@0.5.8-next.0
+  - @backstage/frontend-plugin-api@0.14.0-next.0
+  - @backstage/plugin-search-react@1.10.3-next.0
+
 ## 1.32.3-next.0
 
 ### Patch Changes

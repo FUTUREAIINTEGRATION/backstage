@@ -1,5 +1,13 @@
 # @backstage/backend-dynamic-feature-service
 
+## 0.7.9-next.1
+
+### Patch Changes
+
+- 9b4c414: Updated README for backend-dynamic-feature-service
+- Updated dependencies
+  - @backstage/backend-defaults@0.15.2-next.1
+
 ## 0.7.9-next.0
 
 ### Patch Changes

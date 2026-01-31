@@ -1,5 +1,17 @@
 # @backstage/plugin-search
 
+## 1.6.0-next.1
+
+### Minor Changes
+
+- feef8d9: Added support for configuring the default search type in the search page via the `search.defaultType` option in `app-config.yaml`. This applies to both the legacy and new frontend systems. If not set, the default is empty, which means searching for "all" types.
+
+### Patch Changes
+
+- Updated dependencies
+  - @backstage/frontend-plugin-api@0.14.0-next.0
+  - @backstage/plugin-search-react@1.10.3-next.0
+
 ## 1.5.4-next.0
 
 ### Patch Changes

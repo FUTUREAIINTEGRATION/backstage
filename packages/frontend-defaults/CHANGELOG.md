@@ -1,5 +1,18 @@
 # @backstage/frontend-defaults
 
+## 0.4.0-next.1
+
+### Minor Changes
+
+- 55b2ef6: **BREAKING**: The `API_FACTORY_CONFLICT` warning is now treated as an error and will prevent the app from starting.
+
+### Patch Changes
+
+- Updated dependencies
+  - @backstage/frontend-app-api@0.15.0-next.1
+  - @backstage/plugin-app@0.4.0-next.0
+  - @backstage/frontend-plugin-api@0.14.0-next.0
+
 ## 0.3.6-next.0
 
 ### Patch Changes

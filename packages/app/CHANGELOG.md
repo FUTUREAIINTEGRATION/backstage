@@ -1,5 +1,17 @@
 # example-app
 
+## 0.2.118-next.1
+
+### Patch Changes
+
+- Updated dependencies
+  - @backstage/frontend-app-api@0.15.0-next.1
+  - @backstage/plugin-catalog@1.32.3-next.1
+  - @backstage/ui@0.12.0-next.1
+  - @backstage/plugin-mui-to-bui@0.2.4-next.1
+  - @backstage/plugin-search@1.6.0-next.1
+  - @backstage/plugin-search-react@1.10.3-next.0
+
 ## 0.2.118-next.0
 
 ### Patch Changes

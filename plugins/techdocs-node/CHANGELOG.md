@@ -1,5 +1,11 @@
 # @backstage/plugin-techdocs-node
 
+## 1.14.2-next.1
+
+### Patch Changes
+
+- 3c455d4: Some security fixes
+
 ## 1.14.1-next.0
 
 ### Patch Changes
