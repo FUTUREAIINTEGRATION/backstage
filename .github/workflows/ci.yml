@@ -41,7 +41,7 @@ jobs:
           registry-url: https://registry.npmjs.org/ # Needed for auth
 
       - name: yarn install
-        uses: backstage/actions/yarn-install@b3c1841fd69e1658ac631afafd0fb140a2309024 # v0.6.17
+        uses: backstage/actions/yarn-install@d98113056c83b1b0a1293c8310d77d99db4ea22e # v0.7.3
         with:
           cache-prefix: ${{ runner.os }}-v${{ matrix.node-version }}
 
@@ -77,7 +77,7 @@ jobs:
           registry-url: https://registry.npmjs.org/ # Needed for auth
 
       - name: yarn install
-        uses: backstage/actions/yarn-install@b3c1841fd69e1658ac631afafd0fb140a2309024 # v0.6.17
+        uses: backstage/actions/yarn-install@d98113056c83b1b0a1293c8310d77d99db4ea22e # v0.7.3
         with:
           cache-prefix: ${{ runner.os }}-v${{ matrix.node-version }}
 
@@ -129,6 +129,15 @@ jobs:
         # For now BUI has a custom build script and needs to be built separately
       - name: build BUI
         run: yarn --cwd packages/ui build
+
+        # Build docs-ui to ensure documentation site builds successfully
+      - name: install docs-ui dependencies
+        working-directory: docs-ui
+        run: yarn install
+
+      - name: build docs-ui
+        working-directory: docs-ui
+        run: yarn build
 
       - name: verify type dependencies
         run: yarn lint:type-deps
@@ -228,7 +237,7 @@ jobs:
           registry-url: https://registry.npmjs.org/ # Needed for auth
 
       - name: yarn install
-        uses: backstage/actions/yarn-install@b3c1841fd69e1658ac631afafd0fb140a2309024 # v0.6.17
+        uses: backstage/actions/yarn-install@d98113056c83b1b0a1293c8310d77d99db4ea22e # v0.7.3
         with:
           cache-prefix: ${{ runner.os }}-v${{ matrix.node-version }}
 

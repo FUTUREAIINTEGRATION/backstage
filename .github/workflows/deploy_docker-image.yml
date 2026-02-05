@@ -37,7 +37,7 @@ jobs:
           registry-url: https://registry.npmjs.org/ # Needed for auth
 
       - name: yarn install
-        uses: backstage/actions/yarn-install@b3c1841fd69e1658ac631afafd0fb140a2309024 # v0.6.17
+        uses: backstage/actions/yarn-install@d98113056c83b1b0a1293c8310d77d99db4ea22e # v0.7.3
         with:
           cache-prefix: ${{ runner.os }}-v${{ matrix.node-version }}
 
@@ -52,7 +52,7 @@ jobs:
         working-directory: ./example-app
 
       - name: Login to GitHub Container Registry
-        uses: docker/login-action@5e57cd118135c172c3672efd75eb46360885c0ef # v3.6.0
+        uses: docker/login-action@c94ce9fb468520275223c153574b00df6fe4bcc9 # v3.7.0
         with:
           registry: ghcr.io
           username: ${{ github.actor }}
