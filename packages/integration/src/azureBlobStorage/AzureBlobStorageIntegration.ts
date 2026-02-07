@@ -65,7 +65,8 @@ export class AzureBlobStorageIntergation implements ScmIntegration {
   }
 
   resolveEditUrl(url: string): string {
-    const { accountName, subscriptionId, resourceGroup } = this.integrationConfig;
+    const { accountName, subscriptionId, resourceGroup } =
+      this.integrationConfig;
 
     if (accountName && subscriptionId && resourceGroup) {
       try {
