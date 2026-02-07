@@ -81,11 +81,14 @@ export async function evictEntitiesFromOrphanedProviders(options: {
   providers: EntityProvider[];
   logger: LoggerService;
 }) {
-  for (const providerName of await getOrphanedEntityProviderNames(options)) {
-    await removeEntitiesForProvider({
-      db: options.db,
-      providerName,
-      logger: options.logger,
-    });
-  }
+  const orphanedProviders = await getOrphanedEntityProviderNames(options);
+  await Promise.all(
+    orphanedProviders.map(providerName =>
+      removeEntitiesForProvider({
+        db: options.db,
+        providerName,
+        logger: options.logger,
+      }),
+    ),
+  );
 }
